@@ -27,8 +27,6 @@ use Catalyst qw/
     Session::Store::FastMmap
     Session::State::Cookie
     
-    StatusMessage
-       
 /;
 
 extends 'Catalyst';
@@ -103,9 +101,7 @@ DelhipmNew - Catalyst based application
 L<DelhipmNew::Controller::Root>, L<Catalyst>
 
 =head1 AUTHOR
-
-user
-
+AJ
 =head1 LICENSE
 
 This library is free software. You can redistribute it and/or modify
