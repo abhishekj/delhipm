@@ -1,0 +1,77 @@
+---
+# indicator is the field that is used to test for form submission
+indicator: submit
+# Start listing the form elements
+attributes:
+  del_attributes: 
+   class: label
+elements:
+    # The first element will be a text field for the title
+    - type: Text
+      name: membername
+      label: Member Name
+      # This is an optional 'mouse over' title pop-up
+      constraints:
+        # Force the length to be between 1 and 200 chars
+        - type: Length
+          min: 1
+          max: 200
+          # Override the default of 'Invalid input'
+          message: Length must be between 1 and 200 characters
+
+    # Another text field for the numeric rating
+    - type: Text
+      name: urlcomponent
+      label: Unique URL Part
+      attributes:
+        title: Enter Login name 
+      # Use Filter to clean up the input data
+      # Could use 'NonNumeric' below, but since Filters apply *before*
+      # constraints, it would conflict with the 'Integer' constraint below.
+      # So let's skip this and just use the constraint.
+      #filter:
+        # Remove everything except digits
+        #- NonNumeric
+      # Add constraints to the field
+      constraints:
+        - type: Word
+          message: "Required. Without Space."
+        
+    - type: Password
+      name: password
+      label: Password
+      attributes:
+        title: Enter Password
+    - type: Text
+      name: email
+      label: Email
+      constraints:
+        # Make sure it's a number
+        - type: Email
+          message: "Required. Enter Proper Email ."
+      attributes:
+       title: Enter Email
+       
+    - type: Textarea
+      name: description
+      label: Description
+      rows: 5
+      attributes:
+        title: Enter Description    
+
+    # The submit button
+    - type: Submit
+      name: submit
+      value: Submit
+
+# Global filters and constraints.
+constraints:
+    # The user cannot leave any fields blank
+    - Required
+    # If not all fields are required, move the Required constraint to the
+    # fields that are
+filter:
+    # Remove whitespace at both ends
+    - TrimEdges
+    # Escape HTML characters for safety
+    - HTMLEscape

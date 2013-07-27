@@ -1,0 +1,7 @@
+<div class="well form-inline;">
+<center>
+ <h2>Please fill form to Login! </h2>
+[% error_message %]
+[% form %]
+ </center>
+</div >

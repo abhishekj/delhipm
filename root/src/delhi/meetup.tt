@@ -1,0 +1,17 @@
+<h1>Delhi Perl Mongers Meets</h1>	   
+	   
+	   [% FOREACH meetup IN meetups -%]
+	   
+	    <div class="row">
+	    	<div class="span8" style="padding-left: 10px;"><strong># [% meetup.sno %] </strong> [% meetup.title %]</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span8" style="padding-left: 30px;"><strong>Date:</strong> [% meetup.date %]</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span8" style="padding-left: 30px;"><strong>Description: </strong>[% meetup.description %]</div>
+	    </div> 
+	        <div class="row">
+	            	<div class="span8" style="padding-left: 30px;">&nbsp;</div>
+	        </div>
+	    [% END -%]

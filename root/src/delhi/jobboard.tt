@@ -1,0 +1,22 @@
+
+<h2>&nbsp;&nbsp;Jobs in Delhi<a style="float: right" href="[% c.uri_for('postjob') %]">Postjob</a></h2>
+
+   [% i = 0 %]
+    [% FOREACH job IN jobs -%]
+      
+      <div class="row">
+	    	<div class="span8" style="padding-left: 10px;"><strong># [% i = i+1;i %]&nbsp;&nbsp;&nbsp;</strong><a href = "[%c.uri_for('/delhi/desc') %]/[% job.jobid%]">[% job.companyname %]</a></div>
+	    </div>
+	    <div class="row">
+	    	<div class="span8" style="padding-left: 30px;">&nbsp;&nbsp;&nbsp;<strong>Post :</strong>[% job.title %]</div>
+	    </div> 
+	    <div class="row">
+	    	<div class="span8" style="padding-left: 30px;">&nbsp;&nbsp;&nbsp;<strong>Type :</strong>[% job.type %]</div>
+	    </div> 
+     <div class="row">
+	            	<div class="span8" style="padding-left: 30px;">&nbsp;</div>
+	        </div>
+      <hr>
+        
+    [% END -%]
+   

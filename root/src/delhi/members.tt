@@ -1,0 +1,22 @@
+
+<h1>Delhi Perl Mongers : List Of members</h1>	
+
+		<div class="row">
+	    	<div class="span2" style="padding-left: 10px;">&nbsp;&nbsp;&nbsp; Name</div>
+	    	<div class="span4" style="padding-left: 30px;">Last logged on</div>
+	        </div>
+	        <div class="row">
+	            	<div class="span8" style="padding-left: 30px;">&nbsp;</div>
+	        </div>
+	           
+	   [% i = 0 %]
+	  [% FOREACH member IN list -%]
+	   
+	    <div class="row">
+	    	<div class="span2" style="padding-left: 10px;"><strong>[% i = i+1;i %] </strong>&nbsp;&nbsp;&nbsp; <a href = "[%c.uri_for('/delhi/members') %]/[% member.urlcomponent  %]">[% member.membername %]</a></div>
+	    	<div class="span4" style="padding-left: 30px;">[% member.lastsigned.dmy  %]</div>
+	    </div>
+	        <div class="row">
+	            	<div class="span8" style="padding-left: 30px;">&nbsp;</div>
+	        </div>
+	    [% END -%]

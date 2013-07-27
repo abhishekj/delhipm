@@ -1,0 +1,16 @@
+<table class="table table-striped" cellpadding=5>
+<tr>
+<th>Name</th>
+
+<th>Date Joined</th>
+
+<th>Description</th>
+
+</tr>
+<tr>
+<td>[% member.membername %]</td>
+<td>[% member.dated.dmy %]</td>
+<td>[% member.description %]</td></tr>
+</table>
+
+

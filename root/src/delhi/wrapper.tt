@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Delhi.pm: Delhi Perl Mongers</title>
+    
+      <link rel="stylesheet" type="text/css" href="/static/src/bootstrap.min.css" "/>
+      <style type="text/css">
+.label{padding:2px 4px 3px;font-size:11.049999999999999px;font-weight:;color:red;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#f5f5f5;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.label:hover{color:red;text-decoration:none;}
+      </style>
+    <meta name="keywords" content="Delhi Perl">
+  
+  </head>
+  
+ 
+ <body style = "background-color:#E69400;">
+ 
+
+   <div class="container" style = "background-color:#B27300;" >
+   <div id="body">
+    <div class="row" >
+      <div class="span15" >
+            <div class="row" style = "padding-top:15px;padding-left:30px;background-color:#B27300;margin-left: 40px;">
+                <div class="span1"><h4><a class = "img" href="[% c.uri_for('/') %]">Home</a></h4></div>
+                <div class="span1"><h4><a class = "" href="[% c.uri_for('members') %]">Memberlist</a></h4></div>
+                <div class="span1" style ="padding-left:30px;"><h4><a class = "" href="[% c.uri_for('meetup') %]">Meetup</a></h4></div>
+                <div class="span1" ><h4><a class = "" href="[% c.uri_for('jobboard') %]">Jobboard</a></h4></div>
+                
+                <div class="span2" style ="padding-left:30px;"><h4><a class = "" href="[% c.uri_for('mailinglist') %]">MailingList</a></h4></div>
+                
+                [% IF c.user_exists != 1 %]
+                <div class="span1" style ="padding-left:100px;"><h4><a class = "" href="[% c.uri_for('join') %]">Join</a></h4></div>
+
+                
+                <div class="span1" style ="padding-left:px;"><h4><a class = "" href="[% c.uri_for('login') %]">Login</a></h4></div>
+                
+                [% ELSE %]
+                <div class="span1" style ="padding-left:25px;"><h4><a class = "" href="[% c.uri_for('postjob') %]">Postjob</a></h4></div>
+                <div class="span1" style ="padding-left:px;"><h4><a class = "" href="[% c.uri_for('logout') %]">Logout</a></h4></div>
+            	
+            	[% END %]
+                
+            </div>
+      </div>
+   </div>
+   <div id="body" style="background-image:url('/static/images/delhi.jpg');height: 98px;background-repeat: no-repeat;">
+   
+   </div>
+   </div>
+   <br/>
+   
+      <div   id="body" style = "background-color:#f5f5f5;">
+       <br /><br />
+             [% content %]
+      </div> 
+    <br/>
+      <div id="footer" style = " height:50px; background-color:#B27300;">
+        <div class="">
+                 © 2005-2013  Delhi Perl Mongers; please ask before reusing or repurposing content. powered by <a href="http://perl.org/">Perl</a> 
+        </div>
+         
+      </div>
+      
+     
+      
+      
+      
+      
+     
+      
+   
+    </div>
+</body></html>

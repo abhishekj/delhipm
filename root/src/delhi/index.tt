@@ -1,0 +1,29 @@
+ <!-- start Menu -->
+<div class="hero-unit">
+    
+        <h2>Delhi Perl Mongers</h2>
+      <hr/>
+   <div class="item">
+    <p class="intro">
+		Perl group in delhi have seen an increased activity, so has this site. 
+      </p>
+    <p>
+		To contribute / be a member please subscribe to the <a href="http://mail.pm.org/mailman/listinfo/delhi-pm">mailing list</a> .
+ 		<br>Dont forget to say a hello mail to the list.  
+    </p>
+   </div>
+
+  
+  <div class="item">
+    <p>
+      We will plan <a href="/delhi/meetup/">meetings</a> in Delhi.
+           
+      We have an active <a href="http://mail.pm.org/mailman/listinfo/delhi-pm">mailing list</a> 
+     
+    </p>
+  </div>
+
+ 
+
+</div>
+    

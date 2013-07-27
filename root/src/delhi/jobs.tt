@@ -1,0 +1,9 @@
+<div class="well form-inline;" style = "background-color:">
+<center>
+ 
+
+
+[% form %]
+
+</center>
+</div>
