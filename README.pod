@@ -1,7 +1,9 @@
 =head1 Delhi.pm
+
 Rebuilding delhi.pm.org using Catalyst.
 
 =head1 About
+
 Source code of delhi.pm.org website. It's under development.
 
 =head1 COPYRIGHT AND LICENSE
