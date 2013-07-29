@@ -1,7 +1,6 @@
 package DelhipmNew;
 use Moose;
 use namespace::autoclean;
-
 use Catalyst::Runtime 5.80;
 
 # Set flags and add plugins for the application.
@@ -18,13 +17,11 @@ use Catalyst::Runtime 5.80;
 
 use Catalyst qw/
     ConfigLoader
-    Static::Simple
-    
+    Static::Simple    
     Authentication
-     Session
+    Session
     Session::Store::FastMmap
-    Session::State::Cookie
-    
+    Session::State::Cookie    
 /;
 
 extends 'Catalyst';
@@ -49,8 +46,7 @@ __PACKAGE__->config(
 'Plugin::Authentication' => {
             default => {
             	 credential => {
-                            class => 'Password',
-                  
+                            class => 'Password',                  
                             password_field => 'password',
                             password_type => 'clear',
                         },
