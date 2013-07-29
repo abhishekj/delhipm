@@ -1,4 +1,0 @@
-delhipm
-=======
-
-Delhi PM | Catalyst
