@@ -6,7 +6,7 @@ Rebuilding delhi.pm.org using Catalyst.
 
 Source code of delhi.pm.org website. It's under development.
 
-=head1 COPYRIGHT AND LICENSE
+=head1 Copyright and License
 
 This software is copyright (c) 2013 by Abhishek Jain.
 
